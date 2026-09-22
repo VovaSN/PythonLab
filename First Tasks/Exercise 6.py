@@ -22,9 +22,9 @@ def yearsToDoubleCapital():
         interestEarned = startCapital * interestRate
         startCapital += interestEarned
         years += 1
-        print(f"{years}\t {startCapital}")
+        print(f"{years}\t {startCapital:.2f}")
 
-    return years
+    print(f"\nThe capital will double in {yearsToDoubleCapital()} years.")
 
 evolutionOfCapital()
-print(f"\nThe capital will double in {yearsToDoubleCapital()} years.")
+yearsToDoubleCapital()
