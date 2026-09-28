@@ -37,10 +37,10 @@ def machineGuess():
         playerInput = input("Enter indicates: ").casefold()
 
         if playerInput == 's':
-            maxValue = ans
+            maxValue = ans - 1
 
         elif playerInput == 'b':
-            minValue = ans
+            minValue = ans + 1
 
         elif playerInput == 'f':
             print(f"Fine! Your number is: {ans}. Total attempts: {attempts}")
